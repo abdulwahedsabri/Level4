@@ -176,14 +176,23 @@
         }
       }
 
+      .question {
+        padding-top: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+      }
+
       /* Animation Text */
 
       .styled-text {
         font-size: 48px;
         font-weight: bold;
-        color: #3498db; /* Best color: A vibrant blue */
+        color: #f80808eb; /* Best color: A vibrant blue */
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2),
-          0 0 25px rgba(52, 152, 219, 0.7); /* Shadow effect */
+          0 0 25px rgba(165, 152, 152, 0.929); /* Shadow effect */
         letter-spacing: 2px; /* Adding space between letters */
         text-transform: uppercase; /* Transform text to uppercase */
         padding: 20px;
@@ -197,7 +206,6 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
       }
-
       .styled-text:hover {
         color: #2ecc71; /* Color change on hover */
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4),
@@ -208,7 +216,9 @@
   </head>
   <body>
     <div class="styled-text">Level 4</div>
-    <h4>Mitra AI is Giving permissions To Record Your Video !</h4>
+    <div class="question">
+      Mitra is Giving permissions To Record Your Video.
+    </div>
     <video id="video" autoplay muted></video>
     <button id="startBtn">Start Recording</button>
     <button id="stopBtn" disabled>Stop Recording</button>
